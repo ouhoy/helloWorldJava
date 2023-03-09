@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="306793a6-71f8-47ed-9ed3-922cf9df498f" name="Changes" comment="Add Java Hello World Starting Files">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -49,7 +50,7 @@
       <updated>1678352362127</updated>
       <workItem from="1678352362472" duration="473000" />
       <workItem from="1678352865096" duration="22000" />
-      <workItem from="1678352903942" duration="649000" />
+      <workItem from="1678352903942" duration="2879000" />
     </task>
     <task id="LOCAL-00001" summary="Add Java Hello World Starting Files">
       <created>1678352542721</created>
