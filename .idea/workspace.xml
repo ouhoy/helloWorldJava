@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="306793a6-71f8-47ed-9ed3-922cf9df498f" name="Changes" comment="Add Java Hello World Starting Files">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -36,7 +35,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
+    "settings.editor.selected.configurable": "configurable.group.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -54,7 +53,7 @@
       <workItem from="1678360662769" duration="1892000" />
       <workItem from="1678914973434" duration="634000" />
       <workItem from="1678956606364" duration="467000" />
-      <workItem from="1678957092831" duration="11026000" />
+      <workItem from="1678957092831" duration="11292000" />
     </task>
     <task id="LOCAL-00001" summary="Add Java Hello World Starting Files">
       <created>1678352542721</created>

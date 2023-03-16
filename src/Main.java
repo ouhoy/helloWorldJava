@@ -1,24 +1,28 @@
 public class Main {
     public static void main(String[] args) {
 
+        // Students
         Student studentOne = new Student("Abdallah", "Dahmou", 4);
         Student studentTwo = new Student("Rania", "Samih", 6);
 
+        // Courses
         Course qualitySoftware = new Course("Developing Quality Software and Systems", 30, "Building high-quality software systems.");
         Course webDevelopment = new Course("Web development", 25, "Building web applications with NodeJS and ReactJS.");
 
         Course[] coursesByLecturerOne = {qualitySoftware};
         Lecturer lecturerOne = new Lecturer("Younes", "El Amrani", coursesByLecturerOne);
 
-
+        // Software Engineering Program
         Course[] SECourses = {qualitySoftware, webDevelopment};
         Student[] SEStudents = {studentOne};
         Program SE = new Program("Software Engineering", SECourses, SEStudents);
 
+        // Business Administration Program
         Course[] BACourses = {qualitySoftware};
         Student[] BAStudents = {studentTwo};
         Program BA = new Program("Software Engineering", BACourses, BAStudents);
 
+        // Cardiff Met University Campuses
         Program[] SISTPrograms = {SE, BA};
         School SIST = new School("SIST", "School of software engineering and business", SISTPrograms);
 
