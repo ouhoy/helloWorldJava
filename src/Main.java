@@ -1,44 +1,27 @@
 public class Main {
     public static void main(String[] args) {
 
-        final String myName = "Abdallah";
-        final int myAge = 23;
+        Student studentOne = new Student("Abdallah", "Dahmou", 4);
+        Student studentTwo = new Student("Rania", "Samih", 6);
 
-        Student st = new Student("Abdallah", "Dahmou", 4);
+        Course qualitySoftware = new Course("Developing Quality Software and Systems", 30, "Building high-quality software systems.");
+        Course webDevelopment = new Course("Web development", 25, "Building web applications with NodeJS and ReactJS.");
 
-        //TODO Print something
-        System.out.println(myName + " " + myAge);
+        Course[] coursesByLecturerOne = {qualitySoftware};
+        Lecturer lecturerOne = new Lecturer("Younes", "El Amrani", coursesByLecturerOne);
 
-        if (myAge >= 18) {
-            System.out.println("You are allowed to drive!!");
-        } else {
-            System.out.println("You are not allowed to drive!");
-        }
 
-        int month = 3;
-        String monthString;
+        Course[] SECourses = {qualitySoftware, webDevelopment};
+        Student[] SEStudents = {studentOne};
+        Program SE = new Program("Software Engineering", SECourses, SEStudents);
 
-        // TODO Try Switch Cases in Java
-        switch (month) {
-            case 1:
-                monthString = "January";
-                System.out.println(monthString);
-                break;
-            default:
-                break;
-        }
-        // TODO Try For loop
-        for (int i = 1; i <= 100; i++) {
-            System.out.println("Day " + i);
-        }
+        Course[] BACourses = {qualitySoftware};
+        Student[] BAStudents = {studentTwo};
+        Program BA = new Program("Software Engineering", BACourses, BAStudents);
 
-        // TODO Try While Loop
-        int count = 1;
-        while (count < 10) {
+        Program[] SISTPrograms = {SE, BA};
+        School SIST = new School("SIST", "School of software engineering and business", SISTPrograms);
 
-            System.out.println(count);
-            count++;
-        }
 
     }
 }
@@ -70,7 +53,6 @@ class Person {
 
 class Student extends Person {
 
-
     int level;
 
     public Student(String firstName, String lastName, int level) {
@@ -79,20 +61,78 @@ class Student extends Person {
     }
 }
 
+class Lecturer extends Person {
+    Course[] lecturedCourses;
+
+    public Lecturer(String firstName, String lastName, Course[] lecturedCourses) {
+        super(firstName, lastName);
+        this.lecturedCourses = lecturedCourses;
+    }
+}
 
 class Program {
     String name;
-    String[] listOfCourses;
+    Course[] listOfCourses;
 
-    public Program(String name, String[] listOfCourses) {
+    Student[] students;
+
+    public Program(String name, Course[] listOfCourses, Student[] students) {
+
+        this.name = name;
+        this.listOfCourses = listOfCourses;
+        this.students = students;
 
     }
 }
 
-class Lecturer {
-
-}
 
 class Course {
 
+    String title, description;
+    int hv;
+
+    public Course(String title, int hv, String description) {
+        this.title = title;
+        this.hv = hv;
+        this.description = description;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getHv() {
+        return hv;
+    }
+
+    public void setHv(int hv) {
+        this.hv = hv;
+    }
+}
+
+class School {
+
+    String name, description;
+    Program[] programs;
+
+    public School(String name, String description, Program[] programs) {
+
+        this.name = name;
+        this.description = description;
+        this.programs = programs;
+
+
+    }
 }
