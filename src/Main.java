@@ -4,6 +4,8 @@ public class Main {
         final String myName = "Abdallah";
         final int myAge = 23;
 
+        Student st = new Student("Abdallah", "Dahmou", 4);
+
         //TODO Print something
         System.out.println(myName + " " + myAge);
 
@@ -39,4 +41,58 @@ public class Main {
         }
 
     }
+}
+
+class Person {
+
+    String firstName;
+    String lastName;
+
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+}
+
+
+class Student extends Person {
+
+
+    int level;
+
+    public Student(String firstName, String lastName, int level) {
+        super(firstName, lastName);
+        this.level = level;
+    }
+}
+
+
+class Program {
+    String name;
+    String[] listOfCourses;
+
+    public Program(String name, String[] listOfCourses) {
+
+    }
+}
+
+class Lecturer {
+
+}
+
+class Course {
+
 }
