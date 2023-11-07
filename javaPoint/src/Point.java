@@ -24,9 +24,10 @@ public class Point {
 
         System.out.println(Arrays.toString(points));
 
-
+        // Compare by X and sort
         Comparator<Point> xComparator = Comparator.comparingDouble(point -> point.x);
-        Point[] sortedPoints = Arrays.sort(points,xComparator);
+        Arrays.sort(points,xComparator);
+        System.out.println(Arrays.toString(points));
 
 
     }
