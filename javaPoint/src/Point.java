@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class Point {
 
     double x = Math.random() * 100;
@@ -11,9 +14,20 @@ public class Point {
 
     public static void main(String[] args) {
 
-        for(int i = 0; i < 300; i ++) {
+        Point[] points = new Point[10];
+
+        for(int i = 0; i < points.length; i ++) {
+
+            points[i] = new Point();
 
         }
+
+        System.out.println(Arrays.toString(points));
+
+
+        Comparator<Point> xComparator = Comparator.comparingDouble(point -> point.x);
+        Point[] sortedPoints = Arrays.sort(points,xComparator);
+
 
     }
 }
